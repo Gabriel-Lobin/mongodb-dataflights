@@ -3,7 +3,7 @@ db.resumoVoos.insertOne({
   totalVoosDomesticos: 
     db.voos.find({ $and: [
   { natureza: { $eq: "Doméstica" } },
-  { "empresa.nome": { $eq: "LATAM AIRLINES BRASIL" } }
+  { "empresa.nome": { $eq: "LATAM AIRLINES BRASIL" } },
 ] }).count(),
 });
 
