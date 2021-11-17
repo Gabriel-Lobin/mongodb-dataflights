@@ -1,0 +1,1 @@
+db.voos.find({ "aeroportoOrigim": { $not: { $eq: "BRASIL" } } }).count();
