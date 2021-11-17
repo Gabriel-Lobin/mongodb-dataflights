@@ -1,1 +1,2 @@
-db.voos.find({ litrosCombustivel: { $exists: true } }).limit(1);
+db.voos.find({ litrosCombustivel: { $exists: true } },
+    { vooId: true, _id: false }).limit(1);
